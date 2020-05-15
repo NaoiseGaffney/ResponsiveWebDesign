@@ -1,39 +1,18 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Responsive Web Design
 
-Welcome USER_NAME,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
-
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+1. `*, *::before, *::after { box-sizing: inherit; } html { box-sizing: border-box; }` to ensure a consistent look-and-feel of all elements.
+2. Using percentages for 'widths', avoid setting 'height', and using 'max-width'.
+3. BEM, Block Element Modifier for CSS clarity and less need for nested CSS: `<div class="card"><p class="card__p"></p></div>`
+4. '.btn { display: inline-block; text-decoration: none; border-radius: 100px }', '.btn:hover, .btn:focus { opacity: .75 }
+5. `<div class="container"><div class="row"><div class="col"><div class="col"><div class="col"></div></div></div></div>`, `.row { display:flex; }`, and block__element--modifier.
+6. `.col + col { margin-left: 30px; }`
+7. Avoid descendants, give everything a class instead.
+8. `justify-content: space-between;`, `align-self: flex-start`
+9. Responsive Images: `img { max-width:100 }`
+10. [Semantic Web (HTML)] <https://www.w3schools.com/html/img_sem_elements.gif>
+11. `flex-grow: 1; flex-shrink: 1;` or `width: 100%`
+12. 'min()', 'max()', and 'clamp()'. 'width: max(600px, 70%)' using the smallest of the values. 'width: max(100px, 20%, 50vh)'. 'width: clamp(200px, 50%, 20rem)' => smallest, ideal, max. Use 'clamp()' for flexible font-sizes, for example 'font-size: clamp(2rem, 5vw, 5rem)'.
+13. Media-queries: '@media () {}'
+14. `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+15. 'height', using 'min-height: 660px;', 'display: flex;', 'align-items: center;'.
+16. Responsive Web Design - Summary: Websites are responsive before we write any CSS; When our layouts run into issues, we're at fault; Usually, a desktop-first approach is the issue; Writing mobile-first CSS tends to be the easier way to approach it as well, even if you only have a desktop layout to base things off of; Flexbox is flexible :-) ; Grid layout is another choice, and both work well together;  
